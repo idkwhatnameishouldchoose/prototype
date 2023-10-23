@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+<script type="module" src="mathsgame.js"></script>
+<link rel="stylesheet" type="text/css" href="mathsgamefinish.css"/>
+  <title>Finish</title>
+</head>
+<body>
+<div class="wrapper">
+  <div id="text">
+    <h1>You are here, yay!</h1>
+    <h2>You have finished!</h2>
+    <div id="indications">
+      <h3>Your finish time ----></h3>
+      <h3>Your errors ---------></h3>
+    </div>
+  </div>
+  <div id="buttons">
+    <div class="viewresults">
+      <h1>Errors</h1>
+      <h3 id="h3">1</h3>
+      <a href="work_in_progress.html"><button>view results</button></a>
+    </div>
+    <div class="finishtime">
+      <h1>Finish time</h1>
+      <h3 id="finishtimer">00:00:00</h3>
+      <a href="mathsgamestart.html"><button>Try again</button></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  if (saveTimer()){
+    document.getElementById("finishtimer").innerHTML = saveTimer();
+  }
+
+  import { errors } from 'mathsgame.js';
+
+  document.getElementById("h3").innerHTML = (errors);
+</script>
+</body>
+</html>

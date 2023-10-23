@@ -1,0 +1,41 @@
+* {
+  font-family: Tilt Neon;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper > a > button {
+  width: 175px;
+  height: 55px;
+  border-radius: 50px;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.wrapper > a > button:hover {
+  color: white;
+  background-color: black;
+  border-color: transparent;
+
+  transition: 1s background-color;
+  transition: 1s border-color;
+  transition: 1s color;
+}
+
+.wrapper > h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}

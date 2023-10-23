@@ -1,0 +1,13 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40vh;
+}
+
+#answer-for-question {
+  width: 175px;
+  height: 40px;
+  border-radius: 17px;
+}
